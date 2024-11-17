@@ -19,35 +19,44 @@
         </nav>
     </header>
     <main>
-        <form>
-            <fieldset>
-                <legend>Your Details</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </fieldset>
-            <fieldset>
-                <legend>Your Practice</legend>
-                <label for="practice">What type of witchcraft do you practice?</label>
-                <select id="practice" name="practice">
-                    <option value="green">Green Witchcraft</option>
-                    <option value="hedge">Hedge Witchcraft</option>
-                    <option value="eclectic">Eclectic</option>
-                </select>
-                <label for="tools">Tools you use:</label>
-                <input type="checkbox" id="crystals" name="tools" value="crystals"> Crystals
-                <input type="checkbox" id="candles" name="tools" value="candles"> Candles
-                <input type="checkbox" id="herbs" name="tools" value="herbs"> Herbs
-                <label for="comments">Additional Comments:</label>
-                <textarea id="comments" name="comments"></textarea>
-            </fieldset>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
+        <section>
+            <h2>Share Your Witchy Practice</h2>
+            <p>We’d love to hear about your witchy journey, favorite tools, and what inspires you. Fill out the form below and let us know!</p>
+            
+            <!-- Form Starts Here -->
+            <form action="mailto:ashley.jensen1222@gmail.com" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Practice</legend>
+                    <label for="practice">What type of witchcraft do you practice?</label>
+                    <select id="practice" name="practice">
+                        <option value="green">Green Witchcraft</option>
+                        <option value="hedge">Hedge Witchcraft</option>
+                        <option value="eclectic">Eclectic</option>
+                    </select>
+                    <label for="tools">Tools you use:</label>
+                    <input type="checkbox" id="crystals" name="tools" value="crystals"> Crystals
+                    <input type="checkbox" id="candles" name="tools" value="candles"> Candles
+                    <input type="checkbox" id="herbs" name="tools" value="herbs"> Herbs
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <!-- Form Ends Here -->
+
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Witchy Practices and Lore</p>
     </footer>
 </body>
 </html>
+
